@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "QrLife",
+    "name": "QR Life",
     "slug": "QrLife",
-    "version": "1.0.0",
+    "version": "1.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -12,18 +12,29 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.cleitonpiovesan2.QrLife"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "635b1663-b744-4414-91cb-c9746b4875d3"
+      }
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "android_app_id": "ca-app-pub-3940256099942544~3347511713"
+        }
+      ]
+    ]
   }
 }
